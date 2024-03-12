@@ -1,0 +1,215 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body{
+	padding:0;
+	margin: 0;
+}
+
+body {
+	padding: 48px 0;
+	font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	margin:0;
+	font-size: 1.5rem;
+}
+
+h2 {
+	margin:0;
+	font-weight: normal;
+    opacity: 0.3;
+    font-size: 1rem;
+}
+
+h3, h4 {
+	margin-bottom: 0;
+	margin-top: 36px;
+}
+
+p {
+	margin:0;
+}
+
+h3 + p, h4 + p {
+	margin-top: 8px;
+}
+p + p {
+	margin-top: 16px;
+}
+
+em {
+	font-style: normal;
+	font-size: 0.9rem;
+}
+
+header{
+	text-align: center;
+	padding-bottom: 56px;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.border-none{
+	border: none;
+}
+
+footer {
+	text-align: center;
+	font-size: 0.9rem;
+	margin-top: 36px;
+}
+
+footer span {
+	opacity: 0.4;
+}
+
+footer p {
+	margin-top: 16px;
+}
+
+footer a {
+	color:#000;
+	display: inline-block;
+	margin: 0 8px;
+	text-decoration: none;
+	position: relative;
+}
+
+footer a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .2s ease-in-out;
+}
+
+footer a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
+.app-icon{
+	height:100px;
+	width:100px;
+}
+
+.welcome-banner{
+	border-radius: 24px;
+    min-height: 480px;
+    background: rgb(11,11,11);
+	background: linear-gradient(0deg, rgba(11,11,11,1) 0%, rgba(39,39,39,1) 100%);
+	color: #fff;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	overflow: hidden;
+}
+
+.welcome-banner div {
+	padding:72px 0 72px 72px;
+}
+
+.welcome-banner div + div {
+	height: 100%;
+    padding: 0;
+    position: relative;
+    background: url(images/dutApp_tasks.png) left 80px no-repeat;
+    background-size: 90%;
+}
+
+.welcome-banner h3 {
+	font-size: 2.5rem;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0;
+}
+
+.welcome-banner svg {
+	transform: scale(1.2);
+	transform-origin: left;
+}
+
+.page{
+	margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+
+.page-content{
+	margin:0 48px;
+}
+
+.banner {
+	border-radius: 24px;
+	margin-top: 48px;
+	padding:56px;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	background: rgb(11,11,11);
+	background: linear-gradient(0deg, rgba(11,11,11,1) 0%, rgba(39,39,39,1) 100%);
+	color: #fff;
+}
+
+.banner h5{
+	font-size: 2rem;
+	margin:0;
+}
+
+.welcome-banner h3 span,
+.banner h5 span{
+	color: #FFED91;
+	font-style: italic;
+	text-shadow: 0 0 16px #ffed9180;
+}
+
+.banner p {
+	margin:0;
+	opacity: 60%;
+}
+
+.banner a {
+	position: relative;
+}
+
+.banner a svg{
+	vertical-align: middle;
+	transform: scale(1.2);
+	transform-origin: right;
+}
+
+.banner div + div {
+	text-align: right;
+}
+
+
+@media only screen and (min-width: 1441px) {
+    .page {
+        width: 980px
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .page {
+        width: 692px
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .page {
+        width: 87.5%
+    }
+}
