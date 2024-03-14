@@ -195,6 +195,44 @@ footer a:hover::before {
 	text-align: right;
 }
 
+.testimonials {
+	padding: 48px 0;
+}
+
+.testimonials h5{
+	font-weight: normal;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.testimonials-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 24px;
+}
+
+.testimonials-content div{
+	background-color: #f5f5f5;
+	padding: 24px;
+	border-radius: 24px;
+}
+
+.testimonials-content p {
+	margin: 16px 0;
+}
+
+.testimonials-content i {
+	opacity: 0.3;
+}
+
+.testimonials-content span{
+	background: url(images/star.png) left center repeat;
+	background-size: 25px;
+    height: 24px;
+    width: 125px;
+	display: inline-block;
+}
+
 
 @media only screen and (min-width: 1441px) {
     .page {
